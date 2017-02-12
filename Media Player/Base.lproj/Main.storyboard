@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController2" customModule="Media_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -107,20 +107,20 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="d5i-SU-4hi">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="addSong:" destination="BYZ-38-t0r" id="SHi-Cr-XfX"/>
+                                <action selector="addSong:" destination="BYZ-38-t0r" id="sZQ-Oa-0VQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="barbuttonAdd" destination="d5i-SU-4hi" id="Q8m-m4-WSo"/>
-                        <outlet property="buttonChangeSong" destination="akG-8V-I7L" id="b8s-lu-mTV"/>
-                        <outlet property="buttonGoBack" destination="uHa-eL-dOV" id="Cye-3N-2sA"/>
-                        <outlet property="buttonNextSong" destination="uwc-QS-XIR" id="T9r-IT-oFK"/>
-                        <outlet property="buttonPlayPause" destination="VOt-tC-iMQ" id="a7V-Un-c8v"/>
-                        <outlet property="imageViewLogo" destination="2jA-B0-6iU" id="gzy-u5-aX6"/>
-                        <outlet property="labelEnd" destination="CZJ-MX-9lQ" id="E6s-E7-fK5"/>
-                        <outlet property="labelStart" destination="LQU-CB-oS2" id="xBg-mH-2Oz"/>
-                        <outlet property="slider" destination="Jey-4n-ggf" id="8yg-fg-vR9"/>
+                        <outlet property="barbuttonAdd" destination="d5i-SU-4hi" id="oDF-dz-HBU"/>
+                        <outlet property="buttonChangeSong" destination="akG-8V-I7L" id="IMC-NU-uTK"/>
+                        <outlet property="buttonGoBack" destination="uHa-eL-dOV" id="mwk-FR-oWN"/>
+                        <outlet property="buttonNextSong" destination="uwc-QS-XIR" id="0JG-is-jVJ"/>
+                        <outlet property="buttonPlayPause" destination="VOt-tC-iMQ" id="t7h-v6-AHO"/>
+                        <outlet property="imageViewLogo" destination="2jA-B0-6iU" id="ZSw-Lz-0lj"/>
+                        <outlet property="labelEnd" destination="CZJ-MX-9lQ" id="QGa-dh-Mom"/>
+                        <outlet property="labelStart" destination="LQU-CB-oS2" id="ElX-cW-gN0"/>
+                        <outlet property="slider" destination="Jey-4n-ggf" id="pcJ-5K-lPq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
