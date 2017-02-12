@@ -83,13 +83,14 @@ class ViewController2: UIViewController {
     {
         self.player.addPeriodicTimeObserver(forInterval: CMTime.init(seconds: 1, preferredTimescale: 1), queue: nil) { (time) in
             
+            if (!(self.player.currentItem != nil)) {return};
             let endTime = CMTimeConvertScale((self.player.currentItem?.asset.duration)!, self.player.currentTime().timescale, CMTimeRoundingMethod.roundHalfAwayFromZero)
             let compare = CMTimeCompare(endTime, kCMTimeZero)
 
             if compare != 0
             {
                let normalizedTime = Float(self.player.currentTime().value) / Float(endTime.value)
-                self.slider.value = normalizedTime
+               self.slider.value = normalizedTime
             }
 
             let startTuple = self.secondsToMinutesSeconds(seconds: Int(CMTimeGetSeconds(time)))
